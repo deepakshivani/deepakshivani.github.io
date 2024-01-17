@@ -100,3 +100,7 @@ function copyTextToClip() {
     navigator.clipboard.writeText("deepakshivani1234@gmail.com");
     alert("Copied the Email to clipboard");
   }
+
+  function closeModal(id) {
+    document.getElementById(id).style.display='none'
+  }

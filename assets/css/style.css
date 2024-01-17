@@ -38,12 +38,11 @@
   -moz-osx-font-smoothing: grayscale;
 }
  
-.icon-twitter:before { content: '\f099'; } /* '' */
-.icon-facebook:before { content: '\f09a'; } /* '' */
-.icon-gplus:before { content: '\f0d5'; } /* '' */
-.icon-linkedin:before { content: '\f0e1'; } /* '' */
-.icon-linkedin:before { content: '\f0e1'; } /* '' */
-.icon-up:before { content: '\f176'; } /* '' */
+.icon-twitter:before { content:"\f0c1"; } /* '' */
+.icon-facebook:before { content: "\f006"; } /* '' */
+.icon-gplus:before { content: '\f099'; } /* '' */
+.icon-linkedin:before { content: '\f0e1'; } /* '' */ /* '' */
+.icon-up:before { content: '\f176'; }/* '' */
 
 /* CUSTOM RESETS
 ================================================== */
@@ -152,6 +151,7 @@ html, body {
     max-height: 100%;
     object-fit: cover;
     border-radius: 3px;
+    filter: grayscale(100%);
 }
 
 .visible-xxs {
@@ -270,7 +270,7 @@ html, body {
 }
 /* site-section */
 .site-section {
-   padding-top: 120px;
+   padding-top: 80px;
 }
 
 .site-section h2,
@@ -366,13 +366,14 @@ html, body {
 
 /* Section: Portfolio */
 .section-portfolio {
-    padding-bottom: 120px;
+    padding-bottom: 80px;
 }
 
 .portfolio-item {
     height: 280px;
     margin-bottom: 30px;
     position: relative;
+    box-shadow: 3px 3px 10px 5px rgba(0, 0, 0, 0.2);
 }
 
 .section-portfolio .col-md-4:nth-last-child(-n+3) .portfolio-item {
@@ -418,9 +419,17 @@ html, body {
 }
 
 .portfolio-item-info h4 {
-    margin: 0 0 20px;
+    margin: 0 0 10px;
     font-weight: 700;
     color: #fff;
+    
+}
+
+.portfolio-item-info h5 {
+    margin: 0 0 20px;
+    font-weight: 600;
+    color: #fff;
+    
 }
 
 .portfolio-item-info a {
@@ -458,7 +467,7 @@ html, body {
 .modal-header {
     position: relative;
     padding: 0;
-    height: 500px;
+    height: 40px;
 }
 
 .modal-header .close {
@@ -469,8 +478,8 @@ html, body {
     background-color: #fff;
     font-size: 16px;
     color: #212121;
-    border-left: 1px solid #212121;
-    border-bottom: 1px solid #212121;
+    border-left: 1px solid white;
+    border-bottom: 1px solid white;
     opacity: 1;
     transition: box-shadow 0.25s ease-in-out;
     -moz-transition: box-shadow 0.25s ease-in-out;
@@ -575,10 +584,20 @@ a.facebook-bg:hover{color: #3b5998;}
 a.gplus-bg:hover{color: #007bb5;} 
 a.linkedin-bg:hover {color: #dd4b39;}
 a.icon-up-bg:hover {color: #212121;}
+a.gplus-bg:hover {color:#dd4b39;
+background-color: aqua;}
 
 .copyright {
     margin-bottom: 0;
     line-height: 40px;
     color: #fff;
     text-align: center;
+}
+
+.modal-title{
+font-size: 23px;
+padding: 5px 0px 5px 15px;
+}
+.modal-subline{
+    padding: 10px 0px 10px 30px;
 }
